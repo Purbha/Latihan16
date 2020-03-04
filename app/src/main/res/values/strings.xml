@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Latihan16</string>
+    <string name="bio1">
+        Like a golem or gargoyle, Earthshaker was one with the earth but now walks freely upon it.
+        Unlike those other entities, he created himself through an act of will, and serves no
+        other master.
+    </string>
+    <string name="bio2">
+        The monks of Turstarkuri watched the rugged valleys below their mountain monastery as
+        wave after wave of invaders swept through the lower kingdoms.
+    </string>
+    <string name="role1">Melee - Support - Initiator - Disabler - Nuker</string>
+    <string name="role2">Melee - Carry - Escape - Nuker</string>
+    <string name="imageView_Main_Banner">Main Banner</string>
+    <string name="imageView_Template_Gambar">Template Image</string>
+    <string name="textView_Template_Header">EARTHSHAKER</string>
+    <string name="textView_Template_Rating">Rating</string>
+    <string name="imageView_Detail_Banner">Detail Banner</string>
+    <string name="imageView_Detail_Gambar">Detail Picture</string>
+    <string name="textView_Detail_Header">EARTHSHAKER</string>
+    <string name="textView_Detail_Rating">Rating</string>
+</resources>
