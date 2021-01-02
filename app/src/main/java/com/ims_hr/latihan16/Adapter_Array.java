@@ -2,11 +2,9 @@ package com.ims_hr.latihan16;
 
 public class Adapter_Array {
 
-    String Header;
-    String Role;
+    String Header, Role, Desc;
     int ResID;
     float Rating;
-    String Desc;
 
     public Adapter_Array(String nama, String role, int resID, float rating, String desc) {
         Header = nama;

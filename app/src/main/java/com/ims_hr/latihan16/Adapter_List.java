@@ -18,7 +18,7 @@ public class Adapter_List extends ArrayAdapter<Adapter_Array> {
 
     Context context;
     int layputResourceID;
-    List<Adapter_Array> Data = null;
+    List<Adapter_Array> Data;
 
     public Adapter_List(@NonNull Context context, int resource, @NonNull List<Adapter_Array> objects) {
         super(context, resource, objects);
@@ -38,7 +38,7 @@ public class Adapter_List extends ArrayAdapter<Adapter_Array> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        DataHolder holder = null;
+        DataHolder holder;
         if(convertView == null){
             LayoutInflater inflater = ((Activity)context).getLayoutInflater();
             convertView = inflater.inflate(layputResourceID,parent,false);

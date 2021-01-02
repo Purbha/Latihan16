@@ -7,11 +7,11 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.ims_hr.latihan16.setting.GlobalVar;
+
 public class DetailActivity extends AppCompatActivity {
 
-    TextView TV_Header;
-    TextView TV_Desc;
-    TextView TV_Role;
+    TextView TV_Header, TV_Desc, TV_Role;
     ImageView IV_Gambar;
     RatingBar RB_Rating;
 
@@ -33,11 +33,11 @@ public class DetailActivity extends AppCompatActivity {
 
     private void Set_Object() {
         Intent intent = getIntent();
-        TV_Header.setText(intent.getStringExtra("nama"));
-        TV_Desc.setText(intent.getStringExtra("desc"));
-        TV_Role.setText(intent.getStringExtra("role"));
-        IV_Gambar.setImageResource(intent.getIntExtra("gambar",0) );
-        RB_Rating.setRating(intent.getFloatExtra("rating",0));
+        TV_Header.setText(intent.getStringExtra(GlobalVar.EXTRA_NAMA));
+        TV_Desc.setText(intent.getStringExtra(GlobalVar.EXTRA_DESC));
+        TV_Role.setText(intent.getStringExtra(GlobalVar.EXTRA_ROLE));
+        IV_Gambar.setImageResource(intent.getIntExtra(GlobalVar.EXTRA_GAMBAR,0) );
+        RB_Rating.setRating(intent.getFloatExtra(GlobalVar.EXTRA_RATING,0));
     }
 
 }

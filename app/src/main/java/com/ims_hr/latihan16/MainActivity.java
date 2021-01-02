@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.ims_hr.latihan16.setting.GlobalVar;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(MainActivity.this,DetailActivity.class);
-                intent.putExtra("nama",listData.get(position).Header);
-                intent.putExtra("role",listData.get(position).Role);
-                intent.putExtra("desc",listData.get(position).Desc);
-                intent.putExtra("rating",listData.get(position).Rating);
-                intent.putExtra("gambar",listData.get(position).ResID);
+                intent.putExtra(GlobalVar.EXTRA_NAMA,listData.get(position).Header);
+                intent.putExtra(GlobalVar.EXTRA_ROLE,listData.get(position).Role);
+                intent.putExtra(GlobalVar.EXTRA_DESC,listData.get(position).Desc);
+                intent.putExtra(GlobalVar.EXTRA_RATING,listData.get(position).Rating);
+                intent.putExtra(GlobalVar.EXTRA_GAMBAR,listData.get(position).ResID);
                 startActivity(intent);
             }
         });
