@@ -28,12 +28,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void Inisial() {
         listData = new ArrayList<>();
-        float Rating_1 = (float) 4;
-        float Rating_2 = (float) 3;
-        String Desc_1 = getResources().getString(R.string.bio1);
-        String Desc_2 = getResources().getString(R.string.bio2);
-        String Role_1 = getResources().getString(R.string.role1);
-        String Role_2 = getResources().getString(R.string.role2);
+        float Rating_1 = (float) 4.5;
+        float Rating_2 = (float) 3.5;
+        String Desc_1 = getString(R.string.bio1);
+        String Desc_2 = getString(R.string.bio2);
+        String Role_1 = getString(R.string.role1);
+        String Role_2 = getString(R.string.role2);
+        //listData.clear();
         listData.add(new Adapter_Array("EARTHSHAKER",Role_1,R.drawable.img_1,Rating_1 ,Desc_1));
         listData.add(new Adapter_Array("ANTI-MAGE",Role_2,R.drawable.img_2,Rating_2 ,Desc_2));
         LV_Data = findViewById(R.id.listView_Main_Data);
