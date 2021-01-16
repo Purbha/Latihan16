@@ -43,11 +43,11 @@ public class Adapter_List extends ArrayAdapter<Adapter_Array> {
             LayoutInflater inflater = ((Activity)context).getLayoutInflater();
             convertView = inflater.inflate(layputResourceID,parent,false);
             holder = new DataHolder();
-            holder.IV_Gambar = (ImageView)convertView.findViewById(R.id.imageView_Template_Gambar);
-            holder.TV_Header = (TextView)convertView.findViewById(R.id.textView_Template_Header);
-            holder.TV_Desc = (TextView)convertView.findViewById(R.id.textView_Template_Desc);
-            holder.TV_Role = (TextView)convertView.findViewById(R.id.textView_Template_Role);
-            holder.RB_Rating = (RatingBar) convertView.findViewById(R.id.ratingBar_Template_Rating);
+            holder.IV_Gambar = convertView.findViewById(R.id.imageView_Template_Gambar);
+            holder.TV_Header = convertView.findViewById(R.id.textView_Template_Header);
+            holder.TV_Desc = convertView.findViewById(R.id.textView_Template_Desc);
+            holder.TV_Role = convertView.findViewById(R.id.textView_Template_Role);
+            holder.RB_Rating = convertView.findViewById(R.id.ratingBar_Template_Rating);
             convertView.setTag(holder);
         } else {
             holder = (DataHolder)convertView.getTag();
