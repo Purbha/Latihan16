@@ -33,15 +33,17 @@ public class MainActivity extends AppCompatActivity {
         String Desc_2 = getString(R.string.bio2);
         String Role_1 = getString(R.string.role1);
         String Role_2 = getString(R.string.role2);
-        //listData.clear();
+        listData.clear();
         listData.add(new Adapter_Array("EARTHSHAKER",Role_1,R.drawable.img_1,Rating_1 ,Desc_1));
         listData.add(new Adapter_Array("ANTI-MAGE",Role_2,R.drawable.img_2,Rating_2 ,Desc_2));
         LV_Data = findViewById(R.id.listView_Main_Data);
     }
 
     private void Set_Object() {
-        Adapter_List adapter = new Adapter_List(MainActivity.this,R.layout.template_list,listData);
-        LV_Data.setAdapter(adapter);
+        //Adapter_List adapter = new Adapter_List(MainActivity.this,R.layout.template_list,listData);
+        //LV_Data.setAdapter(adapter);
+        Adapter_Listview adapterListview = new Adapter_Listview(MainActivity.this,R.layout.template_list,listData);
+        LV_Data.setAdapter(adapterListview);
     }
 
     private void Listen_LV() {
